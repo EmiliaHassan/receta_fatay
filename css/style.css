@@ -1,74 +1,91 @@
+* {
+    box-sizing: border-box;
+    /* tamaño de la caja */
+}
+
 body {
-    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     margin: 20px;
 }
 
-.titulo {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: 'Ysabeau Office', sans-serif;
-}
-
-.subtitulo {
+main h2{
     color: #9A7D0A;
-    text-align: center;
+    text-align: left;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     font-size: 30px;
     font-family: 'Ysabeau Office', sans-serif;
     margin: 10px;
 }
 
-.parrafo {
+main h4{
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 140%;
+}
+main > div {
+ /* border: 2px blue solid; */
+ min-height: 180px;
+ margin: 0.5rem;
+ height: auto;
+ width: 60%;
+ float: inline-start; 
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Ysabeau Office', sans-serif;
     text-align: center;
+}
+
+article h2 {
+    color: #9A7D0A;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-family: 'Ysabeau Office', sans-serif;
+    margin: 10px;
+}
+
+article p {
+    text-align: left;
     font-size: 18px;
     font-family: 'Ysabeau Office', sans-serif;
-}
-.parrafo2{
-    color: crimson;
-    font-size:small ;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .negrita {
     font-weight: bold;
 }
 
-p{
+p {
     font-family: cursive;
 }
 
-h2 {
-    color: #996515;
-    font-family: 'Ysabeau Office', sans-serif;
-    font-size: 40px; 
-
-}
-h3 {
+.secciones h3 {
     font-family: 'Ysabeau Office', sans-serif;
     font-size: 170%;
     text-decoration: underline;
 }
 
-h4 {
+.secciones h4 {
     font-family: 'Ysabeau Office', sans-serif;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
-h5 {
+.secciones h5 {
     font-family: 'Ysabeau Office', sans-serif;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
-ul{
-    font-family: 'Open Sans', sans-serif; 
+.secciones ul {
+    font-family: 'Open Sans', sans-serif;
 }
-.musica{
+
+.musica {
     font-family: 'Open Sans', sans-serif;
     font-size: xx-large;
     color: #996515;
-    
+
 }
 
 .video {
@@ -77,17 +94,24 @@ ul{
     color: rgb(72, 70, 134);
 }
 
-.pagina{
+.imagen img {
+    float: left; 
+    width: 30%; 
+    height: auto;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+}
+
+.imagen p {
+    color: crimson;
+    font-size: small;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pagina {
     color: crimson;
     font-family: 'Open Sans', sans-serif;
     font-size: xx-large;
-}
-
-img {
-    width: 500px;
-    height: 400px;
-    border: 3px solid #996515; 
-    border-radius: 5px;
 }
 
 .logohiperv {
@@ -97,6 +121,204 @@ img {
 
 
 iframe, video {
-    border: 3px solid #996515; 
     border-radius: 5px;
-} 
+    margin-bottom: 20px;
+}
+
+
+/* Boton de whatssapp */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.redes {
+    width: 50px;
+    /* Ancho deseado */
+    height: 50px;
+    /* Altura deseada */
+    margin-right: 10px;
+    /* Espacio entre el icono y otros elementos en el footer */
+}
+
+header {
+    background: #FFF;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+}
+
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+
+}
+
+.header-menubar {
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 1rem;
+    /* border: 2px green solid; */
+}
+
+.header-menubar ul {
+    list-style: none;
+    /* Se elimina la viñeta o el número predeterminado */
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0.5rem 0;
+}
+
+/* Hipervinculo */
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-menubar a:hover {
+    color: #996515;
+}
+
+.header-menubar li a {
+    font-size: 1.2rem;
+    background: transparent;
+}
+
+div>h2 {
+    text-align: center;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background-color: #FFF;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesociales ul {
+    list-style: none;
+    margin: 0;
+    /* Eliminar el margen predeterminado de la lista */
+    padding: 0;
+    /* Eliminar el relleno predeterminado de la lista */
+}
+
+.redesociales li {
+    display: inline-block;
+    /* Para que los elementos de la lista se muestren en línea */
+    margin-right: 20px;
+    /* Espacio entre los íconos de redes sociales */
+}
+
+.redesociales li img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para el submenú desplegable */
+.header-menubar .submenu:hover .sublist {
+    display: block;
+}
+
+.header-menubar .sublist {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    width: 400px;
+}
+
+.header-menubar .sublist li {
+    padding: 10px;
+    display: block;
+}
+
+.header-menubar .sublist li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.header-menubar .sublist li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+    
+    
+    
+    
+    
