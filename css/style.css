@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 /* Estilos generales */
 * {
@@ -21,7 +22,7 @@
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color:#333;
+    color: #333;
 }
 
 
@@ -70,22 +71,54 @@ nav {
 }
 
 .contenedor_imagen {
-    width: 35%; /* 60% del ancho del viewport */
-    height: 35vh; /* 60% de la altura del viewport */
+    width: 400px;
+    /* Establece el ancho para acomodar la imagen */
+    height: 300px;
+    /* Ajusta la altura para dejar espacio para el h2 */
     display: flex;
+    flex-direction: column;
+    /* Cambia la dirección del flex container a columna */
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; /* Color de fondo del contenedor */
-    border: 2px solid #333; /* Borde del contenedor */
+    background-color: #f0f0f0;
+    /* Color de fondo del contenedor */
+    border: 2px solid #333;
+    /* Borde del contenedor */
     margin: 20px;
+    text-align: center;
 }
 
 .imagen {
-    max-width: 100%; /* Para asegurarse de que la imagen no sea más grande que el contenedor */
+    max-width: 100%;
+    /* Evitar que la imagen sea más ancha que el contenedor */
     max-height: 100%;
-    width: auto;
-    height: auto;
+    /* Evitar que la imagen sea más alta que el contenedor */
+    margin-top: 10px;
+    /* Espacio entre el h2 y la imagen */
 }
+
+
+
+
+
+.contenedor_imagen_2 {
+    width: 35%;
+    /* 60% del ancho del viewport */
+    max-height: 35vh;
+    /* Establece un máximo de altura para el contenedor */
+    display: flex;
+    flex-direction: column;
+    /* Cambiar la dirección del flex container a columna */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    /* Color de fondo del contenedor */
+    border: 2px solid #333;
+    /* Borde del contenedor */
+    margin: 20px;
+    text-align: center;
+}
+
 .redes {
     flex: 1;
     display: flex;
@@ -351,13 +384,13 @@ main .multimedia {
 }
 
 /* Estilos para la sección de texto (article) */
-.texto h1 {
+.texto_color h1 {
     color: #9A7D0A;
     font-family: 'Inclusive Sans', sans-serif;
     /* border: 5px solid rgb(129, 10, 10); */
 }
 
-.texto h2 {
+.texto_color h2 {
     color: grey;
     font-family: 'Ysabeau Office', sans-serif;
     /* font-family: 'Bungee Spice', cursive; */
@@ -393,3 +426,46 @@ body {
     text-align: center;
     font-weight: bold;
 }
+
+/* celular (modo vertical) */
+@media (max-width:575px) {
+    nav, header {
+        background: #917e5f;
+        box-shadow: 0 0 0.5rem rgba(41, 43, 38, 0.5);
+    }
+    .contenedor_imagen {
+        display: none; /* Oculta elementos con la clase .contenedor_imagen */
+    }
+
+    .texto_color h1 {
+        color: darkmagenta; /* Cambia el color del texto h1 a darkmagenta */
+    }
+
+    .texto_color h2 {
+        color: chocolate; /* Cambia el color del texto h2 a chocolate */
+    }
+
+    .pagina-paulina {
+        display: none; /* Oculta elementos con la clase .pagina-paulina */
+    }
+}
+
+/* celular en modo horizontal y tablet) */
+@media (min-width:575px) {
+    .contenedor_imagen_2 {
+        display: none; /* Oculta elementos con la clase .contenedor_imagen_2 */
+    }
+}
+
+/* tablet modo vertical) */
+@media (max-width:768px) {
+    .logo {
+        display: none; /* Oculta elementos con la clase .logo */
+    }
+
+    .titulo {
+        font-family: 'Josefin Sans', sans-serif; /* Cambia la fuente de .titulo */
+        color: wheat; /* Cambia el color del texto de .titulo */
+    }
+}
+
