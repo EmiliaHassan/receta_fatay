@@ -107,4 +107,15 @@ body {
     border-radius: 5px;
 }
 
+.article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.cartas, .video {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0;
+}
