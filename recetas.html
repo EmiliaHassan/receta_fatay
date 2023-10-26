@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8"><!-- Define la codificación de caracteres del documento como UTF-8. -->
-    <meta name="description"content="Recetas comida árabe">
+    <meta name="description" content="Recetas comida árabe">
     <meta name="author" content="Emilia Hassan">
     <meta name="keywords" content="Recetas,tutoriales">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,20 @@
     <title>Receta Fatay</title><!-- Establece el título de la página web en la barra del navegador. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Botón de whatsapp -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CDN de Bootstrap -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylen.css">
     <header>
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3>Dark Mode</h3>
+                    <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo_Habibi"></a>
@@ -45,7 +55,7 @@
     </header>
     <main>
         <div>
-            <h5 class="fst-italic p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">RECETAS DE LA COCINA ÁRABE</h5>
+            <h5 class="fst-italic p-3 mb-2 text-white bg-dark">RECETAS DE LA COCINA ÁRABE</h5>
         </div>
         <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-sm-block"
             data-bs-ride="carousel">
@@ -58,8 +68,12 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">FALAFE</h5>
-                                <p class="card-text">El Falafel es una de las recetas más populares del Medio Oriente. Dependiendo del lugar al falafel se le da la forma de croqueta, pequeña hamburguesa o bola la cuál es frita con aceite de oliva y se elabora principalmente con garbanzos.</p>
-                                <a href="https://recetasarabes.com/receta/falafel-receta-autentica-original/" target="_blank" class="btn btn-primary">VER RECETA</a>
+                                <p class="card-text">El Falafel es una de las recetas más populares del Medio Oriente.
+                                    Dependiendo del lugar al falafel se le da la forma de croqueta, pequeña hamburguesa
+                                    o bola la cuál es frita con aceite de oliva y se elabora principalmente con
+                                    garbanzos.</p>
+                                <a href="https://recetasarabes.com/receta/falafel-receta-autentica-original/"
+                                    target="_blank" class="btn btn-primary">VER RECETA</a>
                             </div>
                         </div>
                         <div class="card">
@@ -68,9 +82,11 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">CALABACINES RELLENOS</h5>
-                                <p class="card-text"> Los calabacines rellenos o Kousa Mahshi, receta extendida en todo el mundo árabe con orígenes en Egipto. Esta hortaliza, que fueron los árabes quienes extendieron su cultivo por las regiones mediterráneas</p>
+                                <p class="card-text"> Los calabacines rellenos o Kousa Mahshi, receta extendida en todo
+                                    el mundo árabe con orígenes en Egipto. Esta hortaliza, que fueron los árabes quienes
+                                    extendieron su cultivo por las regiones mediterráneas</p>
                                 <a href="https://recetasarabes.com/receta/calabacines-rellenos-kousa-mahshi/"
-                                target="_blank" class="btn btn-primary">VER RECETA</a>
+                                    target="_blank" class="btn btn-primary">VER RECETA</a>
                             </div>
                         </div>
                         <div class="card">
@@ -79,9 +95,12 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">CUSCÚS</h5>
-                                <p class="card-text">La receta de Cuscús o Couscous es un plato característico de la cocina árabe en general y de los países árabes del Magreb – Marruecos, Argel, Túnez, Libia y Mauritania – en particular. Y uno de los platos árabes más conocidos en algunos países europeos.</p>
+                                <p class="card-text">La receta de Cuscús o Couscous es un plato característico de la
+                                    cocina árabe en general y de los países árabes del Magreb – Marruecos, Argel, Túnez,
+                                    Libia y Mauritania – en particular. Y uno de los platos árabes más conocidos en
+                                    algunos países europeos.</p>
                                 <a href="https://recetasarabes.com/receta/receta-original-de-cuscus-o-couscous-marroqui/"
-                                target="_blank" class="btn btn-primary">VER RECETA</a>
+                                    target="_blank" class="btn btn-primary">VER RECETA</a>
                             </div>
                         </div>
                     </div>
@@ -94,9 +113,12 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">SHAWARMA</h5>
-                                <p class="card-text">El Shawarma (en árabe), es un plato que consiste en finas laminas de carne de cordero, ternera, pollo o pavo (condimentadas) asada en un asador vertical y consumidas como bocadillo en  pan de pita junto con vegetales y salsas.</p>
+                                <p class="card-text">El Shawarma (en árabe), es un plato que consiste en finas laminas
+                                    de carne de cordero, ternera, pollo o pavo (condimentadas) asada en un asador
+                                    vertical y consumidas como bocadillo en pan de pita junto con vegetales y salsas.
+                                </p>
                                 <a href="https://recetasarabes.com/receta/receta-de-shawarma-o-doner-kebab/"
-                                target="_blank" class="btn btn-primary">VER RECETA</a>
+                                    target="_blank" class="btn btn-primary">VER RECETA</a>
                             </div>
                         </div>
                         <div class="card">
@@ -105,20 +127,25 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">PAN DE PITA</h5>
-                                <p class="card-text">El pan de pita o pan árabe es una variedad de pan plano sin miga, muy ligero y versátil. Su uso es muy variado tanto para acompañar, como para bocadillo, se consume en el mediterráneo oriental y meridional, especialmente en el cercano oriente.</p>
-                                <a href="https://recetasarabes.com/receta/pan-de-pita-arabe/"
-                                target="_blank" class="btn btn-primary">VER RECETA</a>
+                                <p class="card-text">El pan de pita o pan árabe es una variedad de pan plano sin miga,
+                                    muy ligero y versátil. Su uso es muy variado tanto para acompañar, como para
+                                    bocadillo, se consume en el mediterráneo oriental y meridional, especialmente en el
+                                    cercano oriente.</p>
+                                <a href="https://recetasarabes.com/receta/pan-de-pita-arabe/" target="_blank"
+                                    class="btn btn-primary">VER RECETA</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
                                 <img src="img/kibbe.jpg" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">KIBBE</h5>
-                            <p class="card-text">La receta de Kibbe, Kibe o Kibbeh (se pronuncia «kib-bi») es una popular receta Sirio-libanesa, se consume en gran parte de los países árabes en especial en Siria, Líbano y Palestina y gran parte de  Suramérica.</p>
-                            <a href="https://recetasarabes.com/receta/kibe-kibbe-receta-libanesa/"
-                            target="_blank" class="btn btn-primary">VER RECETA</a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">KIBBE</h5>
+                                <p class="card-text">La receta de Kibbe, Kibe o Kibbeh (se pronuncia «kib-bi») es una
+                                    popular receta Sirio-libanesa, se consume en gran parte de los países árabes en
+                                    especial en Siria, Líbano y Palestina y gran parte de Suramérica.</p>
+                                <a href="https://recetasarabes.com/receta/kibe-kibbe-receta-libanesa/" target="_blank"
+                                    class="btn btn-primary">VER RECETA</a>
                             </div>
                         </div>
                     </div>
@@ -144,8 +171,11 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">FALAFE</h5>
-                                <p class="card-text">El Falafel es una de las recetas más populares del Medio Oriente. Dependiendo del lugar al falafel se le da la forma de croqueta, pequeña hamburguesa o bola la cuál es frita con aceite de oliva y se elabora principalmente con garbanzos.</p>
-                                <a href="https://recetasarabes.com/receta/falafel-receta-autentica-original/" target="_blank" class="btn btn-primary">VER RECETA</a>
+                            <p class="card-text">El Falafel es una de las recetas más populares del Medio Oriente.
+                                Dependiendo del lugar al falafel se le da la forma de croqueta, pequeña hamburguesa o
+                                bola la cuál es frita con aceite de oliva y se elabora principalmente con garbanzos.</p>
+                            <a href="https://recetasarabes.com/receta/falafel-receta-autentica-original/"
+                                target="_blank" class="btn btn-primary">VER RECETA</a>
                         </div>
                     </div>
                 </div>
@@ -156,9 +186,11 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">CALABACINES RELLENOS</h5>
-                            <p class="card-text"> Los calabacines rellenos o Kousa Mahshi, receta extendida en todo el mundo árabe con orígenes en Egipto. Esta hortaliza, que fueron los árabes quienes extendieron su cultivo por las regiones mediterráneas</p>
+                            <p class="card-text"> Los calabacines rellenos o Kousa Mahshi, receta extendida en todo el
+                                mundo árabe con orígenes en Egipto. Esta hortaliza, que fueron los árabes quienes
+                                extendieron su cultivo por las regiones mediterráneas</p>
                             <a href="https://recetasarabes.com/receta/calabacines-rellenos-kousa-mahshi/"
-                            target="_blank" class="btn btn-primary">VER RECETA</a>
+                                target="_blank" class="btn btn-primary">VER RECETA</a>
                         </div>
                     </div>
                 </div>
@@ -169,9 +201,13 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">CUSCÚS</h5>
-                            <p class="card-text"><p class="card-text">La receta de Cuscús o Couscous es un plato característico de la cocina árabe en general y de los países árabes del Magreb – Marruecos, Argel, Túnez, Libia y Mauritania – en particular. Y uno de los platos árabes más conocidos en algunos países europeos.</p>
+                            <p class="card-text">
+                            <p class="card-text">La receta de Cuscús o Couscous es un plato característico de la cocina
+                                árabe en general y de los países árabes del Magreb – Marruecos, Argel, Túnez, Libia y
+                                Mauritania – en particular. Y uno de los platos árabes más conocidos en algunos países
+                                europeos.</p>
                             <a href="https://recetasarabes.com/receta/receta-original-de-cuscus-o-couscous-marroqui/"
-                            target="_blank" class="btn btn-primary">VER RECETA</a>
+                                target="_blank" class="btn btn-primary">VER RECETA</a>
                         </div>
                     </div>
                 </div>
@@ -182,9 +218,11 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">SHAWARMA</h5>
-                            <p class="card-text">El Shawarma (en árabe), es un plato que consiste en finas laminas de carne de cordero, ternera, pollo o pavo (condimentadas) asada en un asador vertical y consumidas como bocadillo en  pan de pita junto con vegetales y salsas.</p>
-                            <a href="https://recetasarabes.com/receta/receta-de-shawarma-o-doner-kebab/"
-                            target="_blank" class="btn btn-primary">VER RECETA</a>
+                            <p class="card-text">El Shawarma (en árabe), es un plato que consiste en finas laminas de
+                                carne de cordero, ternera, pollo o pavo (condimentadas) asada en un asador vertical y
+                                consumidas como bocadillo en pan de pita junto con vegetales y salsas.</p>
+                            <a href="https://recetasarabes.com/receta/receta-de-shawarma-o-doner-kebab/" target="_blank"
+                                class="btn btn-primary">VER RECETA</a>
                         </div>
                     </div>
                 </div>
@@ -195,9 +233,12 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">PAN DE PITA</h5>
-                            <p class="card-text">El pan de pita o pan árabe es una variedad de pan plano sin miga, muy ligero y versátil. Su uso es muy variado tanto para acompañar, como para bocadillo, se consume en el mediterráneo oriental y meridional, especialmente en el cercano oriente.</p>
-                            <a href="https://recetasarabes.com/receta/pan-de-pita-arabe/"
-                            target="_blank" class="btn btn-primary">VER RECETA</a>
+                            <p class="card-text">El pan de pita o pan árabe es una variedad de pan plano sin miga, muy
+                                ligero y versátil. Su uso es muy variado tanto para acompañar, como para bocadillo, se
+                                consume en el mediterráneo oriental y meridional, especialmente en el cercano oriente.
+                            </p>
+                            <a href="https://recetasarabes.com/receta/pan-de-pita-arabe/" target="_blank"
+                                class="btn btn-primary">VER RECETA</a>
                         </div>
                     </div>
                 </div>
@@ -208,9 +249,11 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">KIBBE</h5>
-                            <p class="card-text">La receta de Kibbe, Kibe o Kibbeh (se pronuncia «kib-bi») es una popular receta Sirio-libanesa, se consume en gran parte de los países árabes en especial en Siria, Líbano y Palestina y gran parte de  Suramérica.</p>
-                            <a href="https://recetasarabes.com/receta/kibe-kibbe-receta-libanesa/"
-                            target="_blank" class="btn btn-primary">VER RECETA</a>
+                            <p class="card-text">La receta de Kibbe, Kibe o Kibbeh (se pronuncia «kib-bi») es una
+                                popular receta Sirio-libanesa, se consume en gran parte de los países árabes en especial
+                                en Siria, Líbano y Palestina y gran parte de Suramérica.</p>
+                            <a href="https://recetasarabes.com/receta/kibe-kibbe-receta-libanesa/" target="_blank"
+                                class="btn btn-primary">VER RECETA</a>
                         </div>
                     </div>
                 </div>
@@ -235,47 +278,62 @@
         </div>
 
         <div class="container p-5 m-5">
-
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="cards">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card-1 h-100 justify-content-center">
                         <img src="img/tabule.jpg" class="card-img-top" alt="Imagen 1">
                         <div class="card-body">
                             <h5 class="card-title">TABULE</h5>
-                            <p class="card-text p-2">El Tabulé, Taboule o Tabbouleh es una receta de cocina árabe muy popular. Se trata de una ensalada árabe vegetariana compuesta de trigo bulgur, cebolletas, perejil, hierbabuena y zumo de limón. Es una ensalada fresca, deliciosa y muy sana.</p>
-                            <a href="https://recetasarabes.com/receta/tabule-o-tabbouleh-receta-autentica/" target="_blank" class="btn btn-primary">Ir a la receta</a>
-                        </div>
-                    </div> 
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">  
-                    <div class="cards">
-                        <img src="img/kabsa.jpg" class="card-img-top" alt="Imagen 2">
-                        <div class="card-body">
-                            <h5 class="card-title">KABSA</h5>
-                            <p class="card-text p-2">Esta receta de Kabsa original es uno los platos más famosos de la región de los países del golfo arábigo: Arabia Saudita, Emiratos Árabes, es un plato famoso y principal específicamente en Arabia Saudita y se caracteriza por su sabor intenso y rico en especias.</p>
-                            <a href="https://recetasarabes.com/receta/receta-de-kabsa-machboos-receta-original/" target="_blank"
-                                class="btn btn-primary">Ir a la receta</a>
+                            <p class="card-text p-2">El Tabulé, Taboule o Tabbouleh es una receta de cocina árabe muy
+                                popular. Se trata de una ensalada árabe vegetariana compuesta de trigo bulgur,
+                                cebolletas, perejil, hierbabuena y zumo de limón. Es una ensalada fresca, deliciosa y
+                                muy sana.</p>
+                            <a href="https://recetasarabes.com/receta/tabule-o-tabbouleh-receta-autentica/"
+                                target="_blank" class="btn btn-primary">Ir a la receta</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="cards">
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card-1 h-100">
+                        <img src="img/kabsa.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">KABSA</h5>
+                            <p class="card-text p-2">Esta receta de Kabsa original es uno los platos más famosos de la
+                                región de los países del golfo arábigo: Arabia Saudita, Emiratos Árabes, es un plato
+                                famoso y principal específicamente en Arabia Saudita y se caracteriza por su sabor
+                                intenso y rico en especias.</p>
+                            <a href="https://recetasarabes.com/receta/receta-de-kabsa-machboos-receta-original/"
+                                target="_blank" class="btn btn-primary">Ir a la receta</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card-1 h-100">
                         <img src="img/kafta.jpg" class="card-img-top" alt="Imagen 3">
                         <div class="card-body">
                             <h5 class="card-title">KAFTA</h5>
-                            <p class="card-text p-2">Hay muchas versiones para esta receta de Kafta al horno, desde propuestas tan sencillas, a preparaciones más elaboradas, propiciando un guiso de mucha entidad que se repite, en la mayoría de las cocinas de los países árabes</p>
+                            <p class="card-text p-2">Hay muchas versiones para esta receta de Kafta al horno, desde
+                                propuestas tan sencillas, a preparaciones más elaboradas, propiciando un guiso de mucha
+                                entidad que se repite, en la mayoría de las cocinas de los países árabes</p>
                             <a href="https://recetasarabes.com/receta/kafta-o-kofta-al-horno/" target="_blank"
                                 class="btn btn-primary">Ir a la Receta</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12"> 
-                    <div class="cards">
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card-1 h-100">
                         <img src="img/tahini.jpg" class="card-img-top" alt="Imagen 4">
                         <div class="card-body">
                             <h5 class="card-title">SALSA TANINI</h5>
-                            <p class="card-text p-2">La salsa Tahini, es una pasta elaborada a partir de semillas de sésamo. Es una salsa suave y deliciosa que se utiliza sobre todo como acompañamiento. El tahini es una salsa muy versatil y se acompaña con pan de pita, Kebab, Sawarma, Kafta etc.
+                            <p class="card-text p-2">La salsa Tahini, es una pasta elaborada a partir de semillas de
+                                sésamo. Es una salsa suave y deliciosa que se utiliza sobre todo como acompañamiento. El
+                                tahini es una salsa muy versatil y se acompaña con pan de pita, Kebab, Sawarma, Kafta
+                                etc.
                             </p>
                             <a href=https://recetasarabes.com/receta/salsa-tahini/ target="_blank"
                                 class="btn btn-primary">Ir a la receta</a>
@@ -283,6 +341,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </article>
     <!-- FOOTER -->
@@ -293,45 +352,48 @@
 
                 <div class="col-xs-12 col-md-6 col-lg-4">
                     <p class="h3">HABIBI</p>
-                    <a href="index.html"><img src="img/logo_footer.png" alt="Logo"></a>
+                    <img class="" src="img/logo_footer.png" alt="">
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-4">
                     <p class="h5 mb-3">SEGUINOS:</p>
                     <div class="mb-2">
                         <a href="https://www.instagram.com" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram text-secondary" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-instagram text-secondary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                             </svg>
                         </a>
                     </div>
                     <div class="mb-2">
                         <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook text-primary" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-facebook text-primary" viewBox="0 0 16 16">
                                 <path
                                     d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                             </svg>
                         </a>
                     </div>
                     <div class="mb-2">
-                        <a href="https://www.youtube.com/"target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube text-danger" viewBox="0 0 16 16">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-youtube text-danger" viewBox="0 0 16 16">
                                 <path
                                     d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                             </svg>
                         </a>
                     </div>
                 </div>
+
                 <div class="col-xs-12 col-md-6 col-lg-4">
-                    <p class="h5 mb-3">DESARROLLADOR</p>
-                    <div class=" mb-2">
-                        <p>EMILIA HASSAN</p>
+                    <div class="mb-4 text-center">
+                        <button class="btn btn-secondary autor" onclick="autor()">
+                            DESARROLLADOR
+                        </button>
                     </div>
-                    <div class="mb-2">
-                        <p>ESTUDIANTE DE POTRERO DIGITAL</p>
+                    <div class="col-xs-12 text-center">
+                        <p class="text-white">Copyright - All rights reserved © 2023</p>
                     </div>
-                </div>
-                <div class="col-xs-12 pt-4">
-                    <p class="text-white text-center">Copyright - All rights reserved © 2023</p>
                 </div>
             </div>
         </div>
@@ -340,9 +402,9 @@
         </a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-        crossorigin="anonymous">
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-</body>
+    <script src="js/nocturno.js"></script>
+    </body>
 
 </html>
